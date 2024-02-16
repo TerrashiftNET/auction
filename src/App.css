@@ -1,0 +1,83 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 600px;
+}
+
+thead {
+  background-color: #353535;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#page-content {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#bid-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  max-width: 600px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 600px;
+}
+
+#form input {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+#form button {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+  background-color: #353535;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#bid-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  max-width: 600px;
+  table-layout: fixed;
+  overflow-y: auto;
+}
