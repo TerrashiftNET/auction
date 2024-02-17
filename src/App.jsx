@@ -18,16 +18,17 @@ function App() {
   } else {
     return (
       <>
+        <h1>Auction</h1>
         <div id="page-content">
           <div id="bid-list">
             <table>
-              <thead>
+              <thead id="table-header">
                 <tr>
-                  <td>User</td>
-                  <td>Amount (Diamonds)</td>
+                  <th>User</th>
+                  <th>Amount (Diamonds)</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody id="table-rows">
                 {data.map((item) => (
                   <tr key={item.id}>
                     <td>{item.user}</td>
@@ -70,12 +71,14 @@ function App() {
                 placeholder="User"
                 value={user}
                 onChange={(e) => setUser(e.target.value)}
+                required
               />
               <input
                 type="number"
                 placeholder="Amount"
                 value={amount}
                 onChange={(e) => setAmount(e.target.value)}
+                required
               />
               <button type="submit" disabled={loading}>
                 Submit

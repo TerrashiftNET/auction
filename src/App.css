@@ -1,83 +1,176 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
   text-align: center;
 }
 
-table {
-  margin: 0 auto;
-  border-collapse: collapse;
-  width: 100%;
-  max-width: 600px;
+@media screen and (max-width: 768px) {
+  table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+  }
+
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  #bid-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 4rem;
+    border: 1px solid #ddd;
+    max-width: 600px;
+  }
+
+  #form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+  }
+
+  #form input {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  #form button {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+    background-color: #353535;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  table {
+    border-color: white;
+  }
+
+  table > thead tr {
+    background-color: #353535;
+    color: white;
+    border: 1px solid white;
+  }
+
+  table > thead > tr > th {
+    border: 1px solid white;
+  }
+
+  #bid-list {
+    height: 300px;
+    overflow: scroll;
+    width: 500px;
+  }
+
+  #bid-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  #page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
 }
 
-thead {
-  background-color: #353535;
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
-}
+@media only screen and (min-width: 768px) {
+  table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+  }
 
-td {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
 
-#page-content {
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
+  #page-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
 
-#bid-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 2rem;
-  border: 1px solid #ddd;
-  max-width: 600px;
-}
+  #bid-form {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    margin: 0 5rem;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    max-width: 600px;
+  }
 
-#form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 2rem;
-  max-width: 600px;
-}
+  #form {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    padding: 2rem;
+    max-width: 600px;
+  }
 
-#form input {
-  margin: 0.5rem;
-  padding: 0.5rem;
-  width: 100%;
-  max-width: 300px;
-}
+  #form input {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+  }
 
-#form button {
-  margin: 0.5rem;
-  padding: 0.5rem;
-  width: 100%;
-  max-width: 300px;
-  background-color: #353535;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
+  #form button {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+    background-color: #353535;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
 
-#bid-table {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 2rem;
-  border: 1px solid #ddd;
-  max-width: 600px;
-  table-layout: fixed;
-  overflow-y: auto;
+  #bid-list {
+    height: 300px;
+    overflow: scroll;
+    width: 500px;
+    flex: 1;
+  }
+
+  #bid-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  table {
+    border-color: white;
+  }
+
+  table > thead tr {
+    background-color: #353535;
+    color: white;
+    border: 1px solid white;
+  }
+
+  table > thead > tr > th {
+    border: 1px solid white;
+  }
+
+  table thead {
+    position: sticky;
+    top: 0;
+    margin: 0;
+  }
 }
